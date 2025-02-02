@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>portfolio</title>
+        <link rel="stylesheet" href="myPortfolio.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/6c2754f92f.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="md:px-7 px-3 py-5">
+
+        <!-- #################################### Heading #################################### -->
+
+        <nav>
+            <div class='rounded-full bg-white shadow-md md:px-5 px-2 py-2 flex items-center justify-between'>
+                <img src='/images/logo.svg' alt='Logo' class='w-10' />
+
+                <div class='flex items-center md:gap-7 gap-3'>
+                    <a href="#aboutMe" class="md:text-base text-sm font-semibold ">About Me</a>
+                    <a href="#projects" class="md:text-base text-sm font-semibold ">Projects</a>
+                    <a href="#skills" class="md:text-base text-sm font-semibold ">Skills</a>
+                    <a href="#ContactMe" class="md:text-base text-sm font-semibold ">Contact Me</a>
+                </div>
+            </div>
+        </nav>
+
+        <img src="images/top.png" class="fixed rounded-full m-3 right-0 bottom-0 shadow-md bg-main" width="40px"
+            height="40px" role="button" onclick="topFunction()" id="myBtn">
+
+        <!-- #################################### Landing Page #################################### -->
+        <section>
+            <div class='flex flex-col items-center justify-center gap-7 md:pt-14 pt-7 md:pb-10 pb-5 text-center'>
+                <div class='flex flex-col items-center justify-center md:gap-5 gap-2'>
+                    <p class='flex items-end gap-3 text-white md:text-5xl text-3xl font-semibold'>
+                        <span class='md:text-7xl text-3xl'>👋</span>
+                        Hello! I'm
+                        <span class='text-main'> Akhil Jawali</span>
+                    </p>
+                    <p class='flex items-end gap-2 text-white text-lg font-bold'><span
+                            class='font-normal text-white'>A</span>Front End
+                        Developer / Web Developer </p>
+                    <p class='flex items-center gap-2 text-white text-xl'>With <span
+                            class='font-bold px-3 py-0.5 border rounded-full text-main expBtn text-base'>2+ Years</span>
+                        Experience</p>
+                </div>
+                <div class='flex items-center gap-5'>
+                    <button class='text-main font-bold rounded-full px-2 py-2 border flex items-center gap-3 lighWhite'>
+                        <i class="fa-regular fa-circle-down text-main"></i>Resume</button>
+                    <button class="bg-main text-black rounded-full px-5 py-2 font-bold">Hire Me</button>
+                </div>
+                <img src='images/myPic.png' alt='my_pic' class="md:w-2/5" />
+            </div>
+        </section>
+
+        <!-- #################################### About Me #################################### -->
+        <section id="aboutMe">
+            <div class="flex items-center justify-center md:pt-14 pt-7 md:pb-10 pb-5">
+                <p class="titleText md:text-4xl text-2xl">About Me</p>
+            </div>
+            <div class="flex flex-col items-center gap-5">
+                <div class="flex md:flex-row flex-col items-center justify-between gap-5 w-full">
+                    <div class="flex items-center gap-2">
+                        <img src="/images/aboutMe.svg" alt="">
+                        <div class="flex flex-col gap-3">
+                            <p class="titleText md:text-2xl text-xl font-bold">I Love To</p>
+                            <div class="flex flex-col items-start gap-3">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="bg-white flex items-center gap-2 w-auto rounded-full px-2 py-1 font-semibold">
+                                        ⚽ Play Sports</div>
+                                    <div
+                                        class="bg-white flex items-center gap-2 w-auto rounded-full px-2 py-1 font-semibold">
+                                        🧳 Travelling</div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="bg-white flex items-center gap-2 w-auto rounded-full px-2 py-1 font-semibold">
+                                        🍛 Eat</div>
+                                    <div
+                                        class="bg-white flex items-center gap-2 w-auto rounded-full px-2 py-1 font-semibold">
+                                        🎮 Play Games</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" flex items-center justify-center gap-5 md:w-auto w-full">
+                        <div class="flex flex-col items-center gap-2 p-3 rounded-xl lighWhite ">
+                            <p class="text-4xl text-main font-bold">2+</p>
+                            <div class="flex flex-col items-center">
+                                <p class="text-white text-xl font-semibold">Years Of</p>
+                                <p class="text-white text-xl font-semibold">Experience</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 p-3 rounded-xl lighWhite">
+                            <p class="text-4xl text-main font-bold">20+</p>
+                            <div class="flex flex-col items-center">
+                                <p class="text-white text-xl font-semibold">Project</p>
+                                <p class="text-white text-xl font-semibold">Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-4 py-3 rounded-lg lighWhite fira-code border" id='descriptionDiv'>
+                    <div class="flex gap-x-3 items-start justify-start border-b border-black pb-3">
+                        <div class="bg-red-500 rounded-full p-2"></div>
+                        <div class="bg-yellow-500 rounded-full p-2"></div>
+                        <div class="bg-green-500 rounded-full p-2"></div>
+                    </div>
+                    <div class="flex flex-col items-start py-3">
+                        <p class="text-white text-2xl py-2 font-normal">/ /</p>
+                        <p
+                            class="text-main md:text-base text-sm font-normal capitalize py-3 text-justify promtText md:pr-7">
+                            Results-driven Front-End Developer with over 2 years of experience in building responsive
+                            and
+                            user-friendly web applications. Proficient in HTML, CSS, JavaScript, jQuery, Tailwind CSS,
+                            Bootstrap, and React, with a strong focus on performance and design consistency. Developed 3
+                            dynamic web applications and 15+ static websites, ensuring seamless user experiences across
+                            devices. Passionate about clean code, modern UI/UX practices, and staying up to date with
+                            the
+                            latest web technologies.
+                        </p>
+                        <p class="text-white text-2xl py-2 font-normal">/ /</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- #################################### Experience #################################### -->
+        <section id="Experience">
+            <div class="flex items-center justify-center md:pt-14 pt-7 md:pb-10 pb-5">
+                <p class="titleText md:text-4xl text-2xl">Experience</p>
+            </div>
+            <div class="flex flex-col items-center justify-between gap-5 w-full">
+                <div class="rounded-xl p-3 flex flex-col gap-3 w-full bg-white">
+                    <div class="flex items-center justify-between w-full">
+                        <div class="bg-main text-black flex items-center justify-between gap-3 rounded-full">
+                            <img src="./images/technoboost.svg" class="md:w-14 w-7" alt="">
+                            <div class="flex flex-col items-start">
+                                <p class="pr-3 m-0 md:text-sm text-xs">Technoboost Services</p>
+                                <p class="md:text-sm text-xs">banglore, India</p>
+                            </div>
+                        </div>
+                        <div class="bg-main px-3 py-1 text-black flex items-center gap-3 rounded-full">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="font-semibold md:text-base text-xs">FEB 2023 - Present</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <img src="./images/expSnap.svg" class="rounded-full bg-black p-1 w-12 h-12" alt="">
+                        <p class="md:text-3xl text-2xl font-bold ">Front End Developer</p>
+                    </div>
+                    <ul class="pr-2 flex flex-col gap-2 list-disc">
+                        <li class="md:text-base text-sm">
+                            Developed over 20 static websites and 3 dynamic projects during 2 years
+                            tenure at TechnoBoost, showcasing proficiency in HTML, CSS, JavaScript,
+                            jQuery, React, Bootstrap, and Tailwind.
+                        </li>
+                        <li class="md:text-base text-sm">
+                            Spearheaded the front-end development of various projects, ensuring pixel perfect design
+                            implementation and seamless user experience.
+                        </li>
+                        <li class="md:text-base text-sm">
+                            Collaborated closely with designers and back-end developers to achieve
+                            project goals and deadlines effectively for 10+ projects.
+
+                        </li>
+                        <li class="md:text-base text-sm">
+                            Leveraged advanced CSS techniques and frameworks such as Bootstrap
+                            and Tailwind enhance website responsiveness across different devices.
+                        </li>
+                        <li class="md:text-base text-sm">Actively participated in code reviews and provided constructive
+                            feedback to
+                            team members.</li>
+                        <li class="md:text-base text-sm">
+                            Improved website performance by reducing the loading time by 10-15% less
+                            through efficient coding practices and resource optimization techniques.
+                        </li>
+                        <li class="md:text-base text-sm">
+                            Implemented interactive features and animations using JavaScript and
+                            jQuery to enhance user engagement and functionality.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- #################################### skills #################################### -->
+        <section id="skills">
+            <div class="flex items-center justify-center md:pt-14 pt-7 md:pb-10 pb-5">
+                <p class="titleText md:text-4xl text-2xl">Skills</p>
+            </div>
+
+            <div class="flex flex-col gap-4 items-center justify-center">
+                <p class="titleText md:text-2xl text-xl">Technologies</p>
+                <div id="technologies" class="flex flex-wrap items-center gap-5 md:px-7 px-2 justify-center"></div>
+            </div>
+
+            <div class="flex flex-col gap-4 items-center justify-center pt-10">
+                <p class="titleText md:text-2xl text-xl">Tools I Use</p>
+                <div id="ide" class="flex flex-wrap items-center gap-5 md:px-7 px-2 justify-center"></div>
+            </div>
+        </section>
+
+        <!-- #################################### projects #################################### -->
+        <section id="projects">
+            <div class="flex items-center justify-center md:pt-14 pt-7 md:pb-5 pb-5">
+                <p class="titleText md:text-2xl text-xl">Projects I Have Worked On For My Company</p>
+            </div>
+            <div id="allWebsites" class=" pt-7 flex flex-col gap-7">
+               
+            </div>
+            <p class="pt-5 text-white font-semibold text-lg text-center">"There are numerous other websites that are not
+                displayed here, some of which are currently inactive."</p>
+        </section>
+
+        <!-- #################################### Education #################################### -->
+        <section>
+            <div class="flex items-center justify-center md:pt-14 pt-7 md:pb-10 pb-5">
+                <p class="titleText md:text-4xl text-2xl">Education</p>
+            </div>
+            <div class="flex items-center justify-center gap-5">
+                <div class="gradiantDiv rounded-xl p-3 flex flex-col gap-3 md:w-2/5 w-full">
+                    <div class="flex items-center justify-between">
+                        <div class="bg-main px-3 py-1 text-black flex items-center justify-between gap-3 rounded-full">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="text-sm font-semibold">2018-2022</p>
+                        </div>
+                        <div class="bg-white px-3 py-1 text-black flex items-center justify-between gap-3 rounded-full">
+                            <span>👨‍🎓</span>
+                            <p class="text-sm font-semibold">Graduation</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <p class="bg-white px-3 py-1 text-black text-sm font-semibold rounded-full">Bachelor's Degree
+                        </p>
+                    </div>
+                    <p class="text-lg font-bold text-white">B.E Automobile</p>
+                    <div class="flex items-center gap-3 text-white font-semibold">
+                        <div class="lighWhite flex items-center justify-center py-1 px-3 rounded-full">
+                            🏢
+                        </div>
+                        PDA College of Engineering
+                    </div>
+                    <div class="flex items-center gap-3 text-white font-semibold">
+                        <div class="lighWhite flex items-center justify-center py-1 px-3 rounded-full">
+                            📍
+                        </div>
+                        Gulbarga, Karnataka
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- #################################### ContactMe #################################### -->
+        <section id="ContactMe">
+            <div class="flex items-center justify-center md:pt-14 pt-7 md:pb-10 pb-5">
+                <p class="titleText md:text-4xl text-2xl">Connect Me</p>
+            </div>
+            <div id="connectBtn" class="flex flex-wrap w-auto items-center gap-5 px-7 justify-center"></div>
+        </section>
+
+        <!-- #################################### Portfolio #################################### -->
+        <section class="pb-5">
+            <div class="flex items-center justify-center md:pt-14 pt-7 md:pb-5 pb-5">
+                <p class="titleText md:text-2xl text-xl">Portfolio Made with</p>
+            </div>
+            <div id="portfolio" class="flex flex-wrap w-auto items-center gap-5 px-7 justify-center"></div>
+        </section>
+
+    </body>
+
+    <script src="myPortfolio.js"></script>
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+
+    </body>
+
+</html>
