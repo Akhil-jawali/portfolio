@@ -121,15 +121,18 @@ const portfolio = [
 const connectBtn = [
   {
     name: 'akhiljawali18@gmail.com',
-    img: './images/mail.webp'
+    img: './images/mail.webp',
+    link : 'mailto:akhiljawali18@gmail.com'
   },
   {
     name: 'LinkedIn',
-    img: './images/linkedIn.webp'
+    img: './images/linkedIn.webp',
+    link : 'https://www.linkedin.com/in/akhil-jawali-93a727228/'
   },
   {
     name: '+91 7338125215',
-    img: './images/whatsApp.webp'
+    img: './images/whatsApp.webp',
+    link : 'https://wa.me/917338125215'
   },
 ]
 
@@ -167,7 +170,7 @@ const websiteSection = [
     name: 'Ditos',
     projectDesign: './images/projectsDesignsImg-5.svg',
     projectLogo: './images/projectLogo-5.svg',
-    link: '',
+    link: 'https://ditos.io',
     bgColor: 'webTwo',
     techo: [
       {
@@ -258,10 +261,10 @@ var skillsBtn = () => {
 
   let html4 = '';
   connectBtn.forEach(element => {
-    html4 += `<div class='pl-3 pr-5 py-1 border rounded-full w-auto text-lg font-medium flex items-center gap-3 shadow-md bg-white'>
+    html4 += `<a href="${element.link}" target="_blank"><div class='pl-3 pr-5 py-1 border rounded-full w-auto text-lg font-medium flex items-center gap-3 shadow-md bg-white'>
     <img src='${element.img}' alt='s' class='md:w-6 w-5' />
     <span class='md:text-base text-sm'>${element.name}</span>
-  </div>`
+  </div></a>`
   });
   document.getElementById("connectBtn").innerHTML = html4;
 
