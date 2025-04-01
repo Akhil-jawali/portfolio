@@ -38,32 +38,63 @@ body {
     display: none;
 }
 
-.bg-main{
-    background-color:var(--gold);
+.bg-main {
+    background-color: var(--gold);
 }
 
-.titleText{
+.titleText {
     font-weight: 800;
     color: var(--gold);
 }
 
-.gradiantDiv{
+.gradiantDiv {
     background: radial-gradient(50% 50% at 50% 50%, #F1E0BF 0%, #8c8c8c 100%);
 }
 
-.webOne{
+.webOne {
     background: rgb(157, 147, 202) !important;
 }
 
-.webTwo{
+.webTwo {
     background: rgb(198 218 237) !important;
 }
 
-.webThree{
+.webThree {
     background: rgba(236, 236, 236, 1) !important;
 }
 
-.navMenu:hover{
+.navMenu:hover {
     background-color: black !important;
     color: white !important;
+}
+
+.nameText::after {
+    width: 0%;
+    position: absolute;
+    content: '';
+    background: var(--gold);
+    height: 5px;
+    bottom: -7px;
+    left: 0;
+    animation: hoverEffect;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+}
+
+@keyframes hoverEffect {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0%;
+        left: 100%;
+    }
 }
