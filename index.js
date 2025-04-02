@@ -270,7 +270,7 @@ var skillsBtn = () => {
 
   let projectsHtml = '';
   for (let i = 0; i < websiteSection.length; i++) {
-    projectsHtml += ` <div class="grid md:grid-cols-2 grid-col flex items-strat p-3 rounded-xl ${websiteSection[i].bgColor}">
+    projectsHtml += ` <div class="grid md:grid-cols-2 grid-col flex items-strat p-3 rounded-xl ${websiteSection[i].bgColor} my_projects-${i}">
     <div class="flex items-center justify-center">
         <img src="${websiteSection[i].projectDesign}" class="px-5 w-full">
     </div>

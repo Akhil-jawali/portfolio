@@ -98,3 +98,24 @@ body {
         left: 100%;
     }
 }
+
+.my_pic{
+    animation: imgEffect forwards;
+    animation-timeline : view();
+    opacity: 0%;
+    scale: 0;
+    animation-direction: normal;
+}
+
+@keyframes imgEffect {
+    0% {
+        opacity: 0% ;
+        scale: 0;
+    }
+
+    100% {
+        opacity: 100%;
+        scale: 1;
+    }
+}
+
